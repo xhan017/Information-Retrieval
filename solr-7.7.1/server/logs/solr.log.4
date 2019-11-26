@@ -1,0 +1,851 @@
+2019-04-04 10:48:22.512 INFO  (main) [   ] o.e.j.u.log Logging initialized @629ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-04-04 10:48:22.624 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-04-04 10:48:22.629 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_131-b11
+2019-04-04 10:48:22.648 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///X:/Dev/Information%20Retrieval%20Project/solr-7.7.1/solr-7.7.1/server/contexts/] at interval 0
+2019-04-04 10:48:22.944 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-04-04 10:48:22.952 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-04-04 10:48:22.952 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-04-04 10:48:22.953 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-04-04 10:48:22.986 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-04-04 10:48:23.018 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-04-04 10:48:23.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.1
+2019-04-04 10:48:23.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-04-04 10:48:23.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1
+2019-04-04 10:48:23.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-04-04T10:48:23.022Z
+2019-04-04 10:48:23.041 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server\solr
+2019-04-04 10:48:23.046 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server\solr\solr.xml
+2019-04-04 10:48:23.086 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@17badd3, but no JMX reporters were configured - adding default JMX reporter.
+2019-04-04 10:48:23.246 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-04-04 10:48:28.073 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-04-04 10:48:28.075 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-04-04 10:48:28.144 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@17badd3
+2019-04-04 10:48:28.144 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@17badd3
+2019-04-04 10:48:28.148 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@17badd3
+2019-04-04 10:48:28.178 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server\solr
+2019-04-04 10:48:28.178 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [ir]
+2019-04-04 10:48:28.231 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.c.SolrResourceLoader [ir] Added 58 libs to classloader, from paths: [/X:/Dev/Information%20Retrieval%20Project/solr-7.7.1/solr-7.7.1/contrib/clustering/lib, /X:/Dev/Information%20Retrieval%20Project/solr-7.7.1/solr-7.7.1/contrib/extraction/lib, /X:/Dev/Information%20Retrieval%20Project/solr-7.7.1/solr-7.7.1/contrib/langid/lib, /X:/Dev/Information%20Retrieval%20Project/solr-7.7.1/solr-7.7.1/contrib/velocity/lib, /X:/Dev/Information%20Retrieval%20Project/solr-7.7.1/solr-7.7.1/dist]
+2019-04-04 10:48:28.359 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.1
+2019-04-04 10:48:28.484 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.s.IndexSchema [ir] Schema name=default-config
+2019-04-04 10:48:28.580 WARN  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2019-04-04 10:48:28.680 WARN  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2019-04-04 10:48:28.782 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1271612{/solr,file:///X:/Dev/Information%20Retrieval%20Project/solr-7.7.1/solr-7.7.1/server/solr-webapp/webapp/,AVAILABLE}{X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server/solr-webapp/webapp}
+2019-04-04 10:48:28.811 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@157c287{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-04-04 10:48:28.811 INFO  (main) [   ] o.e.j.s.Server Started @6930ms
+2019-04-04 10:48:28.942 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-04-04 10:48:28.975 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.c.CoreContainer Creating SolrCore 'ir' using configuration from instancedir X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server\solr\ir, trusted=true
+2019-04-04 10:48:29.000 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.ir' (registry 'solr.core.ir') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@17badd3
+2019-04-04 10:48:29.015 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.c.SolrCore [[ir] ] Opening new SolrCore at [X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server\solr\ir], dataDir=[X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server\solr\ir\data\]
+2019-04-04 10:48:29.044 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-04 10:48:29.888 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=25
+2019-04-04 10:48:33.980 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-04 10:48:33.980 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-04 10:48:33.996 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-04-04 10:48:33.996 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-04 10:48:34.085 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.s.SolrIndexSearcher Opening [Searcher@17c3693[ir] main]
+2019-04-04 10:48:34.093 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server\solr\ir\conf
+2019-04-04 10:48:34.107 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-04 10:48:34.112 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=tweet_text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-04 10:48:34.120 INFO  (coreLoadExecutor-9-thread-1) [   x:ir] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-04 10:48:34.133 INFO  (searcherExecutor-10-thread-1-processing-x:ir) [   x:ir] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@17c3693[ir] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.7.1):C2000:[diagnostics={java.runtime.version=1.8.0_131-b11, java.vendor=Oracle Corporation, java.version=1.8.0_131, java.vm.version=25.131-b11, lucene.version=7.7.1, os=Windows 10, os.arch=x86, os.version=10.0, source=flush, timestamp=1552397157523}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-04 10:48:34.133 INFO  (searcherExecutor-10-thread-1-processing-x:ir) [   x:ir] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-04 10:48:34.133 INFO  (searcherExecutor-10-thread-1-processing-x:ir) [   x:ir] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-04 10:48:34.133 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,attributes = {startup=lazy, name=/spell, class=solr.SearchHandler},args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=10,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=100,spellcheck.maxCollations=50,df=_text_},last-components=[spellcheck]}} 
+2019-04-04 10:48:34.137 INFO  (searcherExecutor-10-thread-1-processing-x:ir) [   x:ir] o.a.s.c.SolrCore [ir] Registered new searcher Searcher@17c3693[ir] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.7.1):C2000:[diagnostics={java.runtime.version=1.8.0_131-b11, java.vendor=Oracle Corporation, java.version=1.8.0_131, java.vm.version=25.131-b11, lucene.version=7.7.1, os=Windows 10, os.arch=x86, os.version=10.0, source=flush, timestamp=1552397157523}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-04 10:48:34.228 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donald%2520tremp%25businss&df=tweet_text&_=1554370378131} hits=8 status=0 QTime=3799
+2019-04-04 10:48:34.257 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donald%2520tremp%25businss&df=tweet_text&_=1554370378131} hits=8 status=0 QTime=7
+2019-04-04 10:48:34.267 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donald%2520tremp%25businss&df=tweet_text&_=1554370378131} hits=8 status=0 QTime=6
+2019-04-04 10:48:34.278 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donald%2520tremp%25businss&df=tweet_text&_=1554370378131} hits=8 status=0 QTime=6
+2019-04-04 10:48:34.288 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donald%2520tremp%25businss&df=tweet_text&_=1554370378131} hits=8 status=0 QTime=6
+2019-04-04 10:48:36.214 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donald%2520tremp%25businss&df=tweet_text&_=1554370378131} hits=8 status=0 QTime=6
+2019-04-04 10:48:50.885 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:48:56.713 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:48:57.454 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:48:57.654 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:48:58.799 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:48:59.215 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:48:59.401 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=1
+2019-04-04 10:49:03.039 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=businss&df=tweet_text&_=1554374188109} hits=0 status=0 QTime=0
+2019-04-04 10:49:06.184 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businss&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:49:10.360 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=busiest&df=tweet_text&_=1554374188109} hits=1 status=0 QTime=0
+2019-04-04 10:49:20.584 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=busineass&df=tweet_text&_=1554374188109} hits=0 status=0 QTime=0
+2019-04-04 10:49:23.505 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=busineass&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=1
+2019-04-04 10:49:28.379 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=businass&df=tweet_text&_=1554374188109} hits=0 status=0 QTime=0
+2019-04-04 10:49:30.433 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=businass&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=1
+2019-04-04 10:49:35.790 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=busness&df=tweet_text&_=1554374188109} hits=0 status=0 QTime=0
+2019-04-04 10:49:38.028 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=busness&df=tweet_text&_=1554370378131} hits=0 status=0 QTime=2
+2019-04-04 10:54:12.884 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=busness&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 10:54:14.102 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554375253980} status=0 QTime=0
+2019-04-04 10:54:14.128 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554375253980} status=0 QTime=25
+2019-04-04 10:54:17.743 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=busness&_=1554375254076} hits=0 status=0 QTime=1
+2019-04-04 10:54:25.681 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=busness&_=1554375254076} hits=0 status=0 QTime=1
+2019-04-04 10:54:34.713 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=business&df=tweet_text&_=1554374188109} hits=45 status=0 QTime=0
+2019-04-04 11:11:55.341 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald%2520trump&_=1554375254076} hits=0 status=0 QTime=6
+2019-04-04 11:12:10.867 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald%2520trump&df=tweet_text&_=1554375254076} hits=0 status=0 QTime=4
+2019-04-04 11:12:20.520 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald%2520trump&df=tweet_text&_=1554374188109} hits=8 status=0 QTime=0
+2019-04-04 11:12:27.514 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&_=1554374188109} hits=197 status=0 QTime=1
+2019-04-04 11:12:33.494 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald+trump&df=tweet_text&_=1554375254076} hits=197 status=0 QTime=0
+2019-04-04 11:12:37.539 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald%2520trump&df=tweet_text&_=1554375254076} hits=0 status=0 QTime=3
+2019-04-04 11:13:51.629 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=1
+2019-04-04 11:14:30.958 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554374188109} hits=197 status=0 QTime=0
+2019-04-04 11:14:36.463 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald%2520trump&df=tweet_text&_=1554374188109} hits=0 status=0 QTime=0
+2019-04-04 11:14:39.923 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald%2520trump&df=tweet_text&_=1554375254076} hits=0 status=0 QTime=3
+2019-04-04 11:15:19.418 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:15:37.733 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald%2520trump&df=tweet_text&_=1554374188109} hits=0 status=0 QTime=0
+2019-04-04 11:15:46.182 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:15:48.759 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald%2520trump&df=tweet_text} hits=0 status=0 QTime=0
+2019-04-04 11:16:06.945 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:16:13.073 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554376572944} status=0 QTime=0
+2019-04-04 11:16:13.100 INFO  (qtp16876053-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554376572946} status=0 QTime=24
+2019-04-04 11:16:16.787 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald%2520trump&_=1554376573046} hits=0 status=0 QTime=0
+2019-04-04 11:16:27.514 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:16:35.023 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donat+trump&df=tweet_text} hits=198 status=0 QTime=0
+2019-04-04 11:16:35.918 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+treump&df=tweet_text} hits=8 status=0 QTime=0
+2019-04-04 11:16:40.087 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald+trump&df=tweet_text&_=1554375254076} hits=197 status=0 QTime=0
+2019-04-04 11:16:44.998 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald%2520%0atrump&df=tweet_text&_=1554375254076} hits=203 status=0 QTime=1
+2019-04-04 11:16:50.518 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald+trump&df=tweet_text&_=1554375254076} hits=197 status=0 QTime=0
+2019-04-04 11:16:54.535 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=(dnald+trump)&df=tweet_text&_=1554375254076} hits=197 status=0 QTime=0
+2019-04-04 11:16:57.763 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald+trump&df=tweet_text&_=1554375254076} hits=197 status=0 QTime=0
+2019-04-04 11:17:01.014 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:01.714 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:01.924 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:02.128 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:02.308 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:02.503 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:02.687 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:02.893 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:04.713 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:04.907 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:05.087 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:09.884 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald%2520trump&df=tweet_text&_=1554376573046} hits=0 status=0 QTime=0
+2019-04-04 11:17:19.909 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dnald+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:17:23.124 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dnald+trump&df=tweet_text&_=1554375254076} hits=197 status=0 QTime=0
+2019-04-04 11:17:32.840 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&_=1554376573046} hits=0 status=0 QTime=0
+2019-04-04 11:17:35.648 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text&_=1554375254076} hits=0 status=0 QTime=4
+2019-04-04 11:17:51.102 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:17:51.168 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&sort=tweet_fav_count+desc} hits=0 status=0 QTime=7
+2019-04-04 11:17:51.203 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald&df=tweet_text&rows=2147483647} hits=8 status=0 QTime=0
+2019-04-04 11:17:51.205 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=done&df=tweet_text&rows=2147483647} hits=5 status=0 QTime=0
+2019-04-04 11:19:51.289 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:19:51.302 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&sort=tweet_fav_count+desc} hits=0 status=0 QTime=2
+2019-04-04 11:20:07.140 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp} hits=0 status=0 QTime=4
+2019-04-04 11:20:45.759 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:20:45.773 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:20:50.053 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:22:19.318 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:22:19.330 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 11:22:38.156 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:22:38.168 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 11:22:56.511 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:23:37.324 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:23:37.337 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 11:23:47.659 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:23:47.674 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:24:07.836 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+truemp&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:24:07.848 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+truemp&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 11:24:20.133 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+grump&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:24:20.147 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+grump&df=tweet_text} hits=0 status=0 QTime=5
+2019-04-04 11:24:27.574 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+grump&df=tweet_text&_=1554375254076} hits=0 status=0 QTime=3
+2019-04-04 11:24:37.908 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+gtrump&df=tweet_text&_=1554375254076} hits=0 status=0 QTime=3
+2019-04-04 11:24:48.905 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text&_=1554375254076} hits=0 status=0 QTime=7
+2019-04-04 11:24:54.590 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:24:54.603 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:27:07.892 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+grump&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:27:07.904 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+grump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 11:27:22.959 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+grump&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:27:22.970 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+grump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 11:27:31.362 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+tump&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:27:31.379 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+tump&df=tweet_text} hits=0 status=0 QTime=7
+2019-04-04 11:33:29.207 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dqwdqweqwe&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:33:29.217 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dqwdqweqwe&df=tweet_text} hits=0 status=0 QTime=1
+2019-04-04 11:34:06.416 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+grump&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:34:06.427 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+grump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 11:34:13.165 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:36:14.671 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:40:38.269 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trump&df=tweet_text&_=1554376573046} hits=197 status=0 QTime=0
+2019-04-04 11:40:41.541 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:40:55.670 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+tump&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:40:55.739 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+tump&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:42:06.457 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:42:20.426 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:42:20.441 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=4
+2019-04-04 11:45:45.026 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:45:45.039 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=4
+2019-04-04 11:46:14.460 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:46:14.473 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=4
+2019-04-04 11:47:11.332 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=qweqwe&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:47:11.341 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=qweqwe&df=tweet_text} hits=0 status=0 QTime=1
+2019-04-04 11:47:20.451 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=i_suggestions&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:47:20.461 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=i_suggestions&df=tweet_text} hits=0 status=0 QTime=1
+2019-04-04 11:48:10.673 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:48:10.687 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:48:59.256 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:48:59.270 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:49:13.838 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=wqewqeqweqwe&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:49:13.849 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=wqewqeqweqwe&df=tweet_text} hits=0 status=0 QTime=1
+2019-04-04 11:49:32.643 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=2147483647} hits=0 status=0 QTime=0
+2019-04-04 11:49:32.656 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:49:37.531 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=2147483647} hits=197 status=0 QTime=0
+2019-04-04 11:50:44.173 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 11:50:44.187 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:50:52.035 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 11:51:27.446 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 11:51:27.464 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:51:33.398 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 11:52:10.572 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 11:52:10.585 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 11:52:16.830 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:03:39.369 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 12:03:39.383 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=4
+2019-04-04 12:03:44.889 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:03:48.399 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 12:03:48.413 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=4
+2019-04-04 12:03:56.019 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=qweqweqweq&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 12:03:56.028 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=qweqweqweq&df=tweet_text} hits=0 status=0 QTime=1
+2019-04-04 12:06:19.069 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:06:27.675 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 12:06:27.695 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 12:06:31.926 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:06:37.279 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=qweqweqwe&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 12:06:37.291 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=qweqweqwe&df=tweet_text} hits=0 status=0 QTime=1
+2019-04-04 12:06:41.701 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 12:06:41.711 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 12:26:01.600 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=doneld+trumf&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 12:26:01.614 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=doneld+trumf&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 12:26:07.109 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:29:12.126 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:29:14.375 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:29:20.920 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:30:02.943 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 12:30:07.181 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald&df=tweet_text&rows=5} hits=8 status=0 QTime=0
+2019-04-04 12:30:15.983 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald&df=tweet_text&rows=5} hits=8 status=0 QTime=0
+2019-04-04 12:30:21.071 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald&df=tweet_text&rows=5} hits=8 status=0 QTime=0
+2019-04-04 12:30:26.540 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald&df=tweet_text&rows=5} hits=8 status=0 QTime=0
+2019-04-04 12:30:31.503 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=apple&df=tweet_text&rows=5} hits=18 status=0 QTime=0
+2019-04-04 13:34:09.013 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=bpple&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:34:09.022 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=bpple&df=tweet_text} hits=0 status=0 QTime=0
+2019-04-04 13:34:15.193 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=apple&df=tweet_text&rows=5} hits=18 status=0 QTime=0
+2019-04-04 13:34:20.016 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=appe&df=tweet_text&rows=5} hits=17 status=0 QTime=0
+2019-04-04 13:34:29.087 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=appla&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:34:29.096 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=appla&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:34:33.146 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=appli&df=tweet_text&rows=5} hits=4 status=0 QTime=0
+2019-04-04 13:35:17.816 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:17.828 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=4
+2019-04-04 13:35:20.052 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:20.060 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:21.729 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:21.737 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:22.203 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:22.211 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:22.384 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:22.392 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:28.038 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:28.054 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:30.751 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:30.763 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:31.495 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:31.504 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:32.172 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:32.182 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:38.464 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:35:38.475 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:35:59.125 INFO  (qtp16876053-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 13:35:59.150 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=23
+2019-04-04 13:35:59.175 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=21
+2019-04-04 13:36:01.022 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 13:36:01.030 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554384961016} status=0 QTime=2
+2019-04-04 13:36:01.032 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/replication params={wt=json&command=details&_=1554384961016} status=0 QTime=2
+2019-04-04 13:36:01.042 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554384958962&ts=1554384958962} status=503 QTime=1
+2019-04-04 13:36:01.057 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=34
+2019-04-04 13:36:01.067 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/system params={wt=json&_=1554384961016} status=0 QTime=30
+2019-04-04 13:36:02.465 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 13:36:02.489 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=23
+2019-04-04 13:36:07.583 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384967458} status=0 QTime=0
+2019-04-04 13:36:07.608 INFO  (qtp16876053-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384967459} status=0 QTime=22
+2019-04-04 13:36:07.630 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384967459} status=0 QTime=20
+2019-04-04 13:36:09.495 INFO  (qtp16876053-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384967458} status=0 QTime=0
+2019-04-04 13:36:09.502 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554384969489} status=0 QTime=0
+2019-04-04 13:36:09.503 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/replication params={wt=json&command=details&_=1554384969490} status=0 QTime=0
+2019-04-04 13:36:09.506 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554384967459&ts=1554384967459} status=503 QTime=0
+2019-04-04 13:36:09.540 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384967459} status=0 QTime=44
+2019-04-04 13:36:09.540 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/system params={wt=json&_=1554384969490} status=0 QTime=38
+2019-04-04 13:36:11.088 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384967458} status=0 QTime=0
+2019-04-04 13:36:11.112 INFO  (qtp16876053-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384967459} status=0 QTime=22
+2019-04-04 13:36:13.279 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=*:*&_=1554384971065} hits=2000 status=0 QTime=1
+2019-04-04 13:36:26.279 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text&_=1554384971065} hits=0 status=0 QTime=2
+2019-04-04 13:36:35.621 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+frame&df=tweet_text&_=1554384962441} hits=10 status=0 QTime=0
+2019-04-04 13:36:48.704 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:36:48.714 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:37:00.736 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:37:00.749 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:37:50.116 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+frame&df=tweet_text&rows=5} hits=10 status=0 QTime=0
+2019-04-04 13:47:22.565 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:47:22.576 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+frump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:47:24.960 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+frame&df=tweet_text&rows=5} hits=10 status=0 QTime=0
+2019-04-04 13:48:05.501 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dinald+frump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:48:05.513 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dinald+frump&df=tweet_text} hits=0 status=0 QTime=1
+2019-04-04 13:48:12.100 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=dinald+ftrump&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:48:12.109 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=dinald+ftrump&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:48:13.707 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+ftrump&df=tweet_text&rows=5} hits=8 status=0 QTime=0
+2019-04-04 13:48:20.275 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=denald+trumno&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:48:20.288 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=denald+trumno&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 13:48:22.803 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 13:55:12.152 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+trump&df=tweet_text&_=1554384971065} hits=197 status=0 QTime=0
+2019-04-04 13:55:17.692 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+trudp&df=tweet_text&_=1554384971065} hits=0 status=0 QTime=5
+2019-04-04 13:55:22.031 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+trudp&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:55:22.044 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+trudp&df=tweet_text} hits=0 status=0 QTime=3
+2019-04-04 13:55:24.679 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 13:56:15.753 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+trudp&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 13:56:15.767 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+trudp&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 13:56:18.026 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 14:00:48.233 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+trudp&df=tweet_text&rows=5} hits=0 status=0 QTime=0
+2019-04-04 14:00:48.246 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/spell params={q=donela+trudp&df=tweet_text} hits=0 status=0 QTime=2
+2019-04-04 14:00:50.885 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&rows=5} hits=197 status=0 QTime=0
+2019-04-04 14:07:22.210 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&_=1554384962441} hits=197 status=0 QTime=0
+2019-04-04 14:08:20.850 ERROR (qtp16876053-16) [   x:ir] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'tweet_creation=asec', pos=19
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:08:20.851 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_creation%3Dasec&_=1554384962441} status=400 QTime=210
+2019-04-04 14:08:24.596 ERROR (qtp16876053-17) [   x:ir] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'tweet_creation=asc', pos=18
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:08:24.596 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_creation%3Dasc&_=1554384962441} status=400 QTime=0
+2019-04-04 14:08:28.684 ERROR (qtp16876053-16) [   x:ir] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'tweet_creation=desc', pos=19
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:08:28.684 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_creation%3Ddesc&_=1554384962441} status=400 QTime=0
+2019-04-04 14:08:29.738 INFO  (qtp16876053-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:08:29.741 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:08:29.747 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/replication params={wt=json&command=details&_=1554384961016} status=0 QTime=0
+2019-04-04 14:08:29.749 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554384958962&ts=1554384958962} status=503 QTime=0
+2019-04-04 14:08:29.782 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/system params={wt=json&_=1554384961016} status=0 QTime=36
+2019-04-04 14:08:29.783 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=43
+2019-04-04 14:08:29.924 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:08:29.944 INFO  (qtp16876053-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=19
+2019-04-04 14:08:29.964 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=18
+2019-04-04 14:08:30.576 INFO  (qtp16876053-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:08:30.583 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:08:30.588 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/replication params={wt=json&command=details&_=1554384961016} status=0 QTime=0
+2019-04-04 14:08:30.595 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554384958962&ts=1554384958962} status=503 QTime=0
+2019-04-04 14:08:30.627 INFO  (qtp16876053-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=50
+2019-04-04 14:08:30.627 INFO  (qtp16876053-20) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/system params={wt=json&_=1554384961016} status=0 QTime=33
+2019-04-04 14:08:31.041 INFO  (qtp16876053-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:08:31.065 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=23
+2019-04-04 14:08:35.190 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donela+trudp&_=1554384962441} hits=0 status=0 QTime=0
+2019-04-04 14:08:40.958 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&_=1554384962441} hits=0 status=0 QTime=0
+2019-04-04 14:08:44.094 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&_=1554384962441} hits=197 status=0 QTime=0
+2019-04-04 14:08:50.326 ERROR (qtp16876053-16) [   x:ir] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'tweet_retweet_count=asc', pos=23
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:08:50.326 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_retweet_count%3Dasc&_=1554384962441} status=400 QTime=0
+2019-04-04 14:09:25.316 ERROR (qtp16876053-22) [   x:ir] o.a.s.h.RequestHandlerBase java.lang.IllegalStateException: Type mismatch: tweet_retweet_count was indexed as SORTED_NUMERIC
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:895)
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:879)
+	at org.apache.solr.uninverting.UninvertingReader.getSortedDocValues(UninvertingReader.java:366)
+	at org.apache.lucene.index.FilterLeafReader.getSortedDocValues(FilterLeafReader.java:378)
+	at org.apache.lucene.index.DocValues.getSorted(DocValues.java:390)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getSortedDocValues(FieldComparator.java:709)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getLeafComparator(FieldComparator.java:714)
+	at org.apache.lucene.search.FieldValueHitQueue.getComparators(FieldValueHitQueue.java:180)
+	at org.apache.lucene.search.TopFieldCollector$SimpleFieldCollector.getLeafCollector(TopFieldCollector.java:136)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:661)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:471)
+	at org.apache.solr.search.SolrIndexSearcher.buildAndRunCollectorChain(SolrIndexSearcher.java:200)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListNC(SolrIndexSearcher.java:1604)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListC(SolrIndexSearcher.java:1421)
+	at org.apache.solr.search.SolrIndexSearcher.search(SolrIndexSearcher.java:568)
+	at org.apache.solr.handler.component.QueryComponent.doProcessUngroupedSearch(QueryComponent.java:1435)
+	at org.apache.solr.handler.component.QueryComponent.process(QueryComponent.java:375)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:09:25.317 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_retweet_count+asc&_=1554384962441} status=500 QTime=1
+2019-04-04 14:09:25.317 ERROR (qtp16876053-22) [   x:ir] o.a.s.s.HttpSolrCall null:java.lang.IllegalStateException: Type mismatch: tweet_retweet_count was indexed as SORTED_NUMERIC
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:895)
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:879)
+	at org.apache.solr.uninverting.UninvertingReader.getSortedDocValues(UninvertingReader.java:366)
+	at org.apache.lucene.index.FilterLeafReader.getSortedDocValues(FilterLeafReader.java:378)
+	at org.apache.lucene.index.DocValues.getSorted(DocValues.java:390)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getSortedDocValues(FieldComparator.java:709)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getLeafComparator(FieldComparator.java:714)
+	at org.apache.lucene.search.FieldValueHitQueue.getComparators(FieldValueHitQueue.java:180)
+	at org.apache.lucene.search.TopFieldCollector$SimpleFieldCollector.getLeafCollector(TopFieldCollector.java:136)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:661)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:471)
+	at org.apache.solr.search.SolrIndexSearcher.buildAndRunCollectorChain(SolrIndexSearcher.java:200)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListNC(SolrIndexSearcher.java:1604)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListC(SolrIndexSearcher.java:1421)
+	at org.apache.solr.search.SolrIndexSearcher.search(SolrIndexSearcher.java:568)
+	at org.apache.solr.handler.component.QueryComponent.doProcessUngroupedSearch(QueryComponent.java:1435)
+	at org.apache.solr.handler.component.QueryComponent.process(QueryComponent.java:375)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:09:46.607 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:09:46.613 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:09:46.618 INFO  (qtp16876053-18) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/replication params={wt=json&command=details&_=1554384961016} status=0 QTime=2
+2019-04-04 14:09:46.622 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554384958962&ts=1554384958962} status=503 QTime=0
+2019-04-04 14:09:46.652 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=43
+2019-04-04 14:09:46.652 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/system params={wt=json&_=1554384961016} status=0 QTime=35
+2019-04-04 14:09:47.154 INFO  (qtp16876053-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:09:47.177 INFO  (qtp16876053-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=22
+2019-04-04 14:09:54.451 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&_=1554384962441} hits=197 status=0 QTime=0
+2019-04-04 14:09:57.321 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text} hits=197 status=0 QTime=0
+2019-04-04 14:10:04.195 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_fav_count+asc&_=1554384962441} hits=197 status=0 QTime=13
+2019-04-04 14:10:05.686 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_fav_count+asc&_=1554384962441} hits=197 status=0 QTime=0
+2019-04-04 14:10:09.378 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_fav_count+desc&_=1554384962441} hits=197 status=0 QTime=0
+2019-04-04 14:10:16.952 ERROR (qtp16876053-23) [   x:ir] o.a.s.h.RequestHandlerBase java.lang.IllegalStateException: Type mismatch: tweet_retweet_count was indexed as SORTED_NUMERIC
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:895)
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:879)
+	at org.apache.solr.uninverting.UninvertingReader.getSortedDocValues(UninvertingReader.java:366)
+	at org.apache.lucene.index.FilterLeafReader.getSortedDocValues(FilterLeafReader.java:378)
+	at org.apache.lucene.index.DocValues.getSorted(DocValues.java:390)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getSortedDocValues(FieldComparator.java:709)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getLeafComparator(FieldComparator.java:714)
+	at org.apache.lucene.search.FieldValueHitQueue.getComparators(FieldValueHitQueue.java:180)
+	at org.apache.lucene.search.TopFieldCollector$SimpleFieldCollector.getLeafCollector(TopFieldCollector.java:136)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:661)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:471)
+	at org.apache.solr.search.SolrIndexSearcher.buildAndRunCollectorChain(SolrIndexSearcher.java:200)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListNC(SolrIndexSearcher.java:1604)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListC(SolrIndexSearcher.java:1421)
+	at org.apache.solr.search.SolrIndexSearcher.search(SolrIndexSearcher.java:568)
+	at org.apache.solr.handler.component.QueryComponent.doProcessUngroupedSearch(QueryComponent.java:1435)
+	at org.apache.solr.handler.component.QueryComponent.process(QueryComponent.java:375)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:10:16.952 INFO  (qtp16876053-23) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/select params={q=donald+trump&df=tweet_text&sort=tweet_retweet_count+desc&_=1554384962441} status=500 QTime=0
+2019-04-04 14:10:16.953 ERROR (qtp16876053-23) [   x:ir] o.a.s.s.HttpSolrCall null:java.lang.IllegalStateException: Type mismatch: tweet_retweet_count was indexed as SORTED_NUMERIC
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:895)
+	at org.apache.solr.uninverting.FieldCacheImpl.getTermsIndex(FieldCacheImpl.java:879)
+	at org.apache.solr.uninverting.UninvertingReader.getSortedDocValues(UninvertingReader.java:366)
+	at org.apache.lucene.index.FilterLeafReader.getSortedDocValues(FilterLeafReader.java:378)
+	at org.apache.lucene.index.DocValues.getSorted(DocValues.java:390)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getSortedDocValues(FieldComparator.java:709)
+	at org.apache.lucene.search.FieldComparator$TermOrdValComparator.getLeafComparator(FieldComparator.java:714)
+	at org.apache.lucene.search.FieldValueHitQueue.getComparators(FieldValueHitQueue.java:180)
+	at org.apache.lucene.search.TopFieldCollector$SimpleFieldCollector.getLeafCollector(TopFieldCollector.java:136)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:661)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:471)
+	at org.apache.solr.search.SolrIndexSearcher.buildAndRunCollectorChain(SolrIndexSearcher.java:200)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListNC(SolrIndexSearcher.java:1604)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListC(SolrIndexSearcher.java:1421)
+	at org.apache.solr.search.SolrIndexSearcher.search(SolrIndexSearcher.java:568)
+	at org.apache.solr.handler.component.QueryComponent.doProcessUngroupedSearch(QueryComponent.java:1435)
+	at org.apache.solr.handler.component.QueryComponent.process(QueryComponent.java:375)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:311)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:265)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-04 14:11:14.026 INFO  (qtp16876053-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:11:14.049 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=22
+2019-04-04 14:11:14.057 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554384961016} status=0 QTime=4
+2019-04-04 14:11:14.056 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/config params={wt=json&_=1554387074009} status=0 QTime=3
+2019-04-04 14:11:14.124 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554384961016} status=0 QTime=2
+2019-04-04 14:11:18.057 INFO  (qtp16876053-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:11:18.060 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:18.066 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/config params={wt=json&_=1554387074009} status=0 QTime=0
+2019-04-04 14:11:18.080 INFO  (qtp16876053-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=22
+2019-04-04 14:11:18.097 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:19.935 INFO  (qtp16876053-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:11:19.939 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/config params={wt=json&_=1554387074009} status=0 QTime=0
+2019-04-04 14:11:19.941 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554384961016} status=0 QTime=2
+2019-04-04 14:11:19.958 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=21
+2019-04-04 14:11:19.984 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:24.946 INFO  (qtp16876053-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:11:24.949 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/config params={wt=json&_=1554387074009} status=0 QTime=0
+2019-04-04 14:11:24.951 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:24.970 INFO  (qtp16876053-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=21
+2019-04-04 14:11:24.994 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:29.042 INFO  (qtp16876053-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:11:29.046 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:29.057 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/config params={wt=json&_=1554387074009} status=0 QTime=0
+2019-04-04 14:11:29.065 INFO  (qtp16876053-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=21
+2019-04-04 14:11:29.087 INFO  (qtp16876053-16) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:42.774 INFO  (qtp16876053-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554384958962} status=0 QTime=0
+2019-04-04 14:11:42.781 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:11:42.786 INFO  (qtp16876053-22) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/config params={wt=json&_=1554387074009} status=0 QTime=0
+2019-04-04 14:11:42.797 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554384958962} status=0 QTime=21
+2019-04-04 14:11:42.826 INFO  (qtp16876053-17) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554384961016} status=0 QTime=0
+2019-04-04 14:15:20.240 INFO  (qtp16876053-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554387320142} status=0 QTime=0
+2019-04-04 14:15:20.245 INFO  (qtp16876053-19) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554387320218} status=0 QTime=0
+2019-04-04 14:15:20.249 INFO  (qtp16876053-15) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/config params={wt=json&_=1554387320218} status=0 QTime=0
+2019-04-04 14:15:20.270 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554387320142} status=0 QTime=28
+2019-04-04 14:15:20.326 INFO  (qtp16876053-21) [   x:ir] o.a.s.c.S.Request [ir]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554387320218} status=0 QTime=0
+2019-04-04 14:15:22.289 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554387320142} status=0 QTime=0
+2019-04-04 14:15:22.310 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554387320142} status=0 QTime=20
+2019-04-04 14:15:22.330 INFO  (qtp16876053-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554387320142} status=0 QTime=17
+2019-04-04 14:15:24.880 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554387320142} status=0 QTime=0
+2019-04-04 14:15:24.884 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1554387320142} status=0 QTime=0
+2019-04-04 14:15:24.905 INFO  (qtp16876053-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554387320142} status=0 QTime=23
+2019-04-04 14:15:24.919 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554387320142} status=0 QTime=0
+2019-04-04 14:15:24.921 INFO  (qtp16876053-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1554387320142} status=0 QTime=0
+2019-04-04 14:15:24.940 INFO  (qtp16876053-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554387320142} status=0 QTime=19
+2019-04-04 14:15:42.371 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@157c287{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-04-04 14:15:42.371 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-04-04 14:15:42.373 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=26146797
+2019-04-04 14:15:42.374 INFO  (coreCloseExecutor-15-thread-1) [   x:ir] o.a.s.c.SolrCore [ir]  CLOSING SolrCore org.apache.solr.core.SolrCore@153368
+2019-04-04 14:15:42.374 INFO  (coreCloseExecutor-15-thread-1) [   x:ir] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.ir, tag=153368
+2019-04-04 14:15:42.375 INFO  (coreCloseExecutor-15-thread-1) [   x:ir] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@163ee57: rootName = null, domain = solr.core.ir, service url = null, agent id = null] for registry solr.core.ir / com.codahale.metrics.MetricRegistry@1ee3122
+2019-04-04 14:15:42.394 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-04-04 14:15:42.394 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@f116f6: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@c4fd60
+2019-04-04 14:15:42.396 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-04-04 14:15:42.396 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@98770d: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@c99654
+2019-04-04 14:15:42.397 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-04-04 14:15:42.397 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@e67cad: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@256433
+2019-04-04 14:15:42.403 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1271612{/solr,null,UNAVAILABLE}{X:\Dev\Information Retrieval Project\solr-7.7.1\solr-7.7.1\server/solr-webapp/webapp}
