@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "v2-lazy-list": "^2.2.5",
     "vue": "^2.5.2",
     "vue-parallaxy": "^1.1.1",
